@@ -1,0 +1,37 @@
+body{
+    background: rgb(88,88,88);
+    background: radial-gradient(circle, rgba(88,88,88,1) 41%, rgba(24,23,23,1) 87%);    
+}
+
+.navbar {
+    z-index: 1000; 
+}
+
+.accordion-dark {
+    background-color: #333; 
+    color: #fff;
+}
+
+.accordion-dark .accordion-button {
+    background-color: #807e7e; 
+    color: #fff; 
+}
+
+.accordion-dark .accordion-button:not(.collapsed) {
+    background-color: #807e7e; 
+}
+
+.accordion-dark .accordion-collapse {
+    background-color: #555; 
+}
+
+.accordion-dark .accordion-button::after {
+    color: #fff; 
+}
+.accordion-dark .accordion-button.collapsed::after {
+    color: #fff !important;
+}
+
+.accordion-dark .accordion-button:not(.collapsed)::after {
+    color: #fff !important;
+}

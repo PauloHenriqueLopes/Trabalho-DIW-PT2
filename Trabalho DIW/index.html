@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/Logo_Trabalho_DIW-removebg-preview.png"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <!--Cabecalho-->
+    <header>
+      <!--Menu-->
+      <nav
+        class="navbar sticky-top navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body mb-3 w-100"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a href="./index.html"
+            ><img
+              src="./assets/imgs/Logo_Trabalho_DIW-removebg-preview.png"
+              alt=""
+              style="height: 100px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./assets/pages/albuns.html"
+                  >Álbuns</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./assets/pages/faq.html"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Corpo-->
+    <main>
+      <!--Titulo destaque-->
+      <section>
+        <div class="container-fluid">
+          <div class="row border-bottom border-2 border-light">
+            <div class="col mb-2 mt-4">
+              <h3 class="text-light">Destaques:</h3>
+            </div>
+          </div>
+        </div>
+        <!--Carrossel-->
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-12 bg-dark rounded-4">
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-inner p-5" id="carouselInner">
+                  <div class="carousel-item active">
+                    <img
+                      src="#"
+                      style="height: 400px"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="#"
+                      style="height: 400px"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="#"
+                      style="height: 400px"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="#"
+                      style="height: 400px"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="#"
+                      style="height: 400px"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="#"
+                      style="height: 400px"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="#"
+                      style="height: 400px"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="#"
+                      style="height: 400px"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5></h5>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Titulo Mapa-->
+      <article>
+        <div class="container-fluid border-bottom border-3 border-light">
+          <div class="row">
+            <div class="col mb-2">
+              <h3 class="text-light">Mapa:</h3>
+            </div>
+          </div>
+        </div>
+        <!--Mapa-->
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12">
+              <div class="map-container mt-5">
+                <div id="map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Titulo Albuns-->
+        <div class="container-fluid border-bottom border-3 border-light">
+          <div class="row">
+            <div class="col mt-3">
+              <h3 class="text-light">Albuns:</h3>
+            </div>
+          </div>
+        </div>
+        <!--Albuns-->
+        <div class="container-fluid mt-5" id="albumContainer">
+          <div class="row row-cols-1 row-cols-md-2 g-4 mt-5"></div>
+        </div>
+        <!--Titulo Creditos-->
+        <div class="container-fluid border-bottom border-3 border-light">
+          <div class="row">
+            <div class="col mt-3">
+              <h3 class="text-light">Creditos:</h3>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!--Creditos-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row mb-5 mt-5">
+          <div class="col-md-6 col-sm-12 p-3 text-center">
+            <h6 class="text-primary">Sobre:</h6>
+            <p class="text-justify text-light fs-6">
+              No Stadium Seat, mergulhamos profundamente no emocionante mundo
+              dos estádios esportivos e de entretenimento ao redor do globo,
+              proporcionando aos nossos usuários uma experiência única e
+              inesquecível. Somos mais do que apenas um site; somos o seu guia
+              essencial para descobrir os tesouros arquitetônicos e culturais
+              dos estádios mais icônicos do mundo. Permita-nos levá-lo a uma
+              jornada que transcende o comum e mergulha nas histórias, tradições
+              e inovações que tornam cada estádio uma obra-prima única.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 ml-3 mt-3 text-center">
+            <h6 class="text-primary">Autoria:</h6>
+            <img
+              src="./assets/imgs/index/Foto.png"
+              style="height: 200px; width: 200px"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 mt-5 text-center">
+            <p class="text-light mt-3">
+              <span class="text-primary">Aluno:</span> Paulo Henrique Lopes de
+              Paula
+            </p>
+            <p class="text-light">
+              <span class="text-primary">Curso:</span> Ciência da Computação
+            </p>
+            <p class="text-light">
+              <span class="text-primary">Turno:</span> Manhã
+            </p>
+            <span class="text-primary">Redes Sociais:</span>
+            <a
+              class="social-icon"
+              href="https://www.instagram.com/paulo.hl_/"
+              target="_blank"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+            <a
+              class="social-icon"
+              href="https://twitter.com/_paulo_hl"
+              target="_blank"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+            <a
+              class="social-icon"
+              href="https://www.facebook.com/paulohenrique.lopes.739/"
+              target="_blank"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mt-4">
+            <p class="text-center text-light">
+              © 2023 Copyright: Paulo Henrique Lopes de Paula todos os direitos
+              reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/map.js"></script>
+    <script src="./assets/js/card.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

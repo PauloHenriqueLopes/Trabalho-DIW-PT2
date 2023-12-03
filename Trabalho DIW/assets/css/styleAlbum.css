@@ -1,0 +1,12 @@
+body{
+    background: rgb(88,88,88);
+    background: radial-gradient(circle, rgba(88,88,88,1) 41%, rgba(24,23,23,1) 87%);    
+}
+
+.navbar {
+    z-index: 1000; 
+}
+
+.text-light p {
+    margin-bottom: 10px; /* Adiciona espaço entre os parágrafos */
+  }
