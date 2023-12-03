@@ -45,14 +45,20 @@ async function createAlbumCards() {
       );
     
       cardHTML += `
-        <div class="col mb-3">
-          <div class="card mx-auto bg-dark" style="width: 25rem">
-            <img src="./assets/imgs/index/${album.url_imagem_capa}" class="card-img-top" alt="..." onclick="preventLink(event)" />
+        <div class="col mb-3 col-lg-3 col-md-6 col-sm-12">
+          <div class="card mx-auto bg-dark">
+            <img src="./assets/imgs/index/${
+              album.url_imagem_capa
+            }" class="card-img-top" alt="..." onclick="preventLink(event)" />
             <div class="card-body bg-dark radius-2 text-light">
               <h5 class="card-title">${album.titulo}</h5>
               <p class="card-text">${album.descricao}</p>
               <div class="mt-auto card-buttons">
-                <button id="${favoriteButtonId}" class="btn btn-primary mt-auto favorite-btn" onclick="handleFavoriteClick(${albumId}, '${album.titulo}', this, ${isAlbumFavorited})">${isAlbumFavorited ? "Destaques" : "Adicionar aos Destaques"}</button>
+                <button id="${favoriteButtonId}" class="btn btn-primary mt-auto favorite-btn" onclick="handleFavoriteClick(${albumId}, '${
+        album.titulo
+      }', this, ${isAlbumFavorited})">${
+        isAlbumFavorited ? "Destaques" : "Adicionar aos Destaques"
+      }</button>
                 <a href="./assets/pages/album.html?id=${albumId}" class="btn btn-primary mt-auto">Ver Álbum</a>
               </div>
             </div>
@@ -60,13 +66,14 @@ async function createAlbumCards() {
         </div>
       `;
 
-      
       if ((index + 1) % 4 === 0) {
-        cardHTML += `</div><div class='row row-cols-1 row-cols-md-4 g-4 mt-3'>`;
+        cardHTML += `</div><div class='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-3'>`;
+      } else if ((index + 1) === data.length) {
+        cardHTML += `</div>`;
       }
     });
-
-    cardHTML += "</div>"; 
+    
+    cardHTML += "</div>";
 
     albumContainer.innerHTML = cardHTML;
   } catch (error) {
@@ -99,7 +106,6 @@ async function handleFavoriteClick(
     );
 
     if (isAlbumFavorited && albumDestaque) {
-      
       const removeResponse = await fetch(
         `https://jsonserver-trabalhodiw3.paulo-henriq161.repl.co/destaques/${albumDestaque.id}`,
         {
@@ -118,7 +124,6 @@ async function handleFavoriteClick(
       button.classList.remove("favorite-clicked");
       button.disabled = false;
     } else {
-    
       const addResponse = await fetch(
         "https://jsonserver-trabalhodiw3.paulo-henriq161.repl.co/destaques",
         {
@@ -128,8 +133,8 @@ async function handleFavoriteClick(
           },
           body: JSON.stringify({
             id_album_destaque: albumId,
-            nome_estadio: `Estádio ${stadiumName}`, 
-            texto: `Estádio ${stadiumName}`, 
+            nome_estadio: `Estádio ${stadiumName}`,
+            texto: `Estádio ${stadiumName}`,
           }),
         }
       );
@@ -144,7 +149,7 @@ async function handleFavoriteClick(
     }
     window.location.reload();
   } catch (error) {
-      console.error("Erro:", error);
+    console.error("Erro:", error);
   }
 }
 
