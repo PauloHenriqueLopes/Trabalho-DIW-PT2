@@ -53,7 +53,7 @@ async function createAlbumCards() {
               <p class="card-text">${album.descricao}</p>
               <div class="mt-auto card-buttons">
                 <button id="${favoriteButtonId}" class="btn btn-primary mt-auto favorite-btn" onclick="handleFavoriteClick(${albumId}, '${album.titulo}', this, ${isAlbumFavorited})">${isAlbumFavorited ? "Destaques" : "Adicionar aos Destaques"}</button>
-                <a href="./assets/pages/album.html?id=${albumId}" class="btn btn-primary mt-auto">Ver Álbum</a>
+                <a href="../pages/album.html?id=${albumId}" class="btn btn-primary mt-auto">Ver Álbum</a>
               </div>
             </div>
           </div>

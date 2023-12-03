@@ -41,7 +41,7 @@ async function createAlbumCards(albumId) {
                         <img src="${foto.url_imagem}" class="card-img-top" alt="..." style="height: 200px; object-fit: cover;">
                         <div class="card-body bg-dark radius-2 text-light">
                             <h5 class="card-title">${foto.descricao}</h5>
-                            <p class="card-text">${foto.autor}</p>
+                            <p class="card-text">Autor: ${foto.autor}</p>
                             <div class="mt-auto">
                                 <a href="item.html" class="btn btn-primary mt-auto">Detalhes</a>
                             </div>
